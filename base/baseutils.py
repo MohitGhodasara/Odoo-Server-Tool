@@ -164,8 +164,8 @@ class utils():
         return True if self.is_server_path(path) else False
 
     def get(self, name):
-        dict = {'index': 0, 'database': 1, 'port': 2, 'thread': 3, 'status': 4}
-        return dict[name]
+        columns = {'index': 0, 'database': 1, 'port': 2, 'thread': 3, 'status': 4}
+        return columns[name]
 
     def set_value(self, search_column, search_val, set_column, set_val):
         self.data[self.get_column(search_column).index(search_val)][
