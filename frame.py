@@ -283,9 +283,6 @@ class server(tk.Frame, control, version, psql):
         self._offsetx = event.x
         self._offsety = event.y
 
-    def animate(self):
-        pass
-
     def place_all(self):
         def geometry(x, y, height=25, width=110):
             # 40 110 40 110 40 110 40
