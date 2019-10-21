@@ -15,8 +15,6 @@ class control(config):
             process_name = 'python.exe'
         elif self.os == 'darwin':
             process_name = 'python'
-        else:
-            pass
         for p in psutil.process_iter():
             try:
                 all_process = p.name()
